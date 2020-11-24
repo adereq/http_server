@@ -1,5 +1,4 @@
 use std::str::FromStr;
-use super::request::ParseError;
 
 pub enum Method {
     GET,
