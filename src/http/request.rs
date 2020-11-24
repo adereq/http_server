@@ -6,6 +6,7 @@ use std::fmt::{Result as FmtResult, Display, Debug, Formatter};
 use std::str;
 use super::QueryString;
 
+#[derive(Debug)]
 pub struct Request<'buf> {
     path: &'buf str,
     query_string: Option<QueryString<'buf>>,
